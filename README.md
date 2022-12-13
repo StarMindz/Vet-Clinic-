@@ -1,8 +1,10 @@
 
+# VET CLINIC
+A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+This repository includes files with plain SQL that can be used to recreate the VET CLINIC database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
