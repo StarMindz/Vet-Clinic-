@@ -2,7 +2,7 @@
 
 CREATE TABLE animals (
     id                 INT,
-    name               VARCHAR,
+    name               VARCHAR(100),
     date_of_birth      DATE,
     escape_attempts    INT,
     neutered           BOOLEAN,
