@@ -1,6 +1,6 @@
 
 # VET CLINIC
-A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
+A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic. In this project I explored creating tables, storing informations in created tables and querying tables
 
 ## Getting Started
 
