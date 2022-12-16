@@ -16,7 +16,7 @@ CREATE TABLE vets (
     id BIGSERIAL NOT NULL,
     name VARCHAR,
     age INTEGER,
-    date_of_graduation DATE
+    date_of_graduation DATE,
     PRIMARY KEY(id)
 );
 
