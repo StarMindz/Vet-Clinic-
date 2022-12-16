@@ -16,5 +16,5 @@ SELECT * FROM animals INNER JOIN species ON animals.species_id = species.id WHER
 SELECT * FROM owners FULL OUTER JOIN animals ON owners.id = animals.owner_id;
 SELECT species.name, COUNT(*) FROM animals INNER JOIN species ON animals.species_id = species.id GROUP BY species.name;
 SELECT * FROM animals INNER JOIN owners ON animals.owner_id = owners.id INNER JOIN species ON animals.species_id = species.id WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
-SELECT * FROM  animals INNER JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Jennifer Orwell' AND animals.escape_attempts = 0;
+SELECT * FROM  animals INNER JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
 SELECT full_name, COUNT(*) FROM owners INNER JOIN animals ON owners.id = animals.owner_id GROUP BY animals.full_name ORDER BY COUNT(animals.owner_id) DESC LIMIT 1;
