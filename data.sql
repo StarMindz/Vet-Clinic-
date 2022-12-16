@@ -14,3 +14,11 @@ VALUES(5, 'Charmander', '2020-02-08', 0, false, -11.00),
 (9, 'Boarmon', '2005-06-07', 7, true, 20.4),
 (10, 'Blossom', '1998-10-13', 3, true, 17),
 (11, 'Ditto', '2022-05-14', 4, true, 22);
+
+
+-- Vets
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES('William Tatcher', 45, '2000-04-24'),
+      ('Maisy Smith', 26, '2019-01-17'),
+      ('Stephanie Mendez', 64, '1981-05-04'),
+      ('Jack Harkness', 38, '2008-06-08');
