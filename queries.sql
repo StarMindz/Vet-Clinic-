@@ -11,12 +11,12 @@ SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 SELECT animals.name AS "Animal Name", vets.name AS "Vet Name", date_of_visit FROM visits 
 INNER JOIN vets ON visits.vet_id = vets.id  
-INNER JOIN animals ON visits.animal_id = animals.id 
+INNER JOIN animals ON visits.animals_id = animals.id 
 WHERE vets.name = 'William Tatcher' ORDER BY date_of_visit DESC LIMIT 1;
 
 SELECT vets.name AS "Vet Name", COUNT(*) FROM visits 
 INNER JOIN vets ON visits.vet_id = vets.id  
-INNER JOIN animals ON visits.animal_id = animals.id 
+INNER JOIN animals ON visits.animals_id = animals.id 
 WHERE vets.name = 'Stephanie Mendez' GROUP BY vets.name; 
 
 SELECT * FROM vets 
