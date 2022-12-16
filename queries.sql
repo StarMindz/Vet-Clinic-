@@ -44,8 +44,8 @@ INNER JOIN vets ON visits.vet_id = vets.id
 ORDER BY date_of_visit LIMIT 1;
 
 SELECT vets.name AS "Vet Name", COUNT(*) FROM visits
-FULL OUTER JOIN Vets ON visits.vet_id = vets.id 
-FULL OUTER JOIN specializations ON specializations.vet_id = Vets.id
+FULL OUTER JOIN vets ON visits.vet_id = vets.id 
+FULL OUTER JOIN specializations ON specializations.vet_id = vets.id
 FULL OUTER JOIN species ON specializations.species_id = species.id
 WHERE specializations.species_id IS NULL OR specializations.species_id != species.id 
 GROUP BY vets.name;
