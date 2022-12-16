@@ -24,7 +24,7 @@ LEFT JOIN specializations ON vets.id = specializations.vet_id
 LEFT JOIN species ON specializations.species_id = species.id;  
 
 SELECT animals.name AS "Animal Name", vets.name AS "Vet Name" FROM visits 
-INNER JOIN animals ON visits.animal_id = animals.id 
+INNER JOIN animals ON visits.animals_id = animals.id 
 INNER JOIN vets ON visits.vet_id = vets.id 
 WHERE vets.name = 'Stephanie Mendez' AND date_of_visit BETWEEN '2020-04-01' AND '2020-08-30' GROUP BY animals.name, vets.name;
 
