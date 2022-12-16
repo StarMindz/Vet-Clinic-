@@ -51,9 +51,9 @@ WHERE specializations.species_id IS NULL OR specializations.species_id != specie
 GROUP BY vets.name;
 
 SELECT vets.name AS "Vet Name", species.name AS "Species", COUNT(*) FROM visits
-INNER JOIN Vets ON visits.vet_id = vets.id 
+INNER JOIN vets ON visits.vet_id = vets.id 
 INNER JOIN animals
-ON visits.animal_id = animals.id
+ON visits.animals_id = animals.id
 INNER JOIN species
 ON animals.species_id = species.id
 WHERE vets.name = 'Maisy Smith'
