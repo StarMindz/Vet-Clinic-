@@ -38,8 +38,8 @@ INNER JOIN vets ON visits.vet_id = vets.id
 WHERE vets.name = 'Maisy Smith'
 ORDER BY date_of_visit LIMIT 1;
 
-SELECT  animals.name AS "Animal Name", vets.name AS "Vet Name", date_of_visit FROM visits
-INNER JOIN animals ON visits.animal_id = animals.id
+SELECT * FROM visits
+INNER JOIN animals ON visits.animals_id = animals.id
 INNER JOIN vets ON visits.vet_id = vets.id
 ORDER BY date_of_visit LIMIT 1;
 
